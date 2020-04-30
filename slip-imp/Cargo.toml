@@ -1,0 +1,26 @@
+[package]
+name = "slip-imp"
+license = "MIT"
+description = "Proc macro backend for slip"
+repository = "https://github.com/Moxinilian/slip/"
+readme = "README.md"
+version = "0.1.0"
+authors = ["Moxinilian <moxinilian@tutanota.com>"]
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[features]
+default = []
+allow-no-encryption = []
+
+[dependencies]
+absolution = "0.1"
+quote = "1.0"
+aes-ctr = "0.3"
+rand = "0.7"
+hex = "0.4"
+proc-macro-error = "1.0"
+base64 = "0.12"
+proc-macro-hack = "0.5"

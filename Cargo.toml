@@ -1,0 +1,28 @@
+[package]
+name = "slip"
+license = "MIT"
+description = "An hassle-free utility to encrypt error handling strings in your public binaries to protect your business logic"
+repository = "https://github.com/Moxinilian/slip/"
+readme = "README.md"
+version = "0.1.0"
+authors = ["Moxinilian <moxinilian@tutanota.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+default = []
+allow-no-encryption = ["slip-imp/allow-no-encryption"]
+
+[dependencies]
+proc-macro-hack = "0.5"
+slip-imp = { path = "slip-imp" }
+
+[dev-dependencies]
+anyhow = "1.0"
+
+[workspace]
+members = [
+    "slip-imp",
+    "unslip",
+]

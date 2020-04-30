@@ -1,0 +1,19 @@
+[package]
+name = "unslip"
+license = "MIT"
+description = "Tool to decrypt slip tokens"
+repository = "https://github.com/Moxinilian/slip/"
+readme = "README.md"
+version = "0.1.0"
+authors = ["Moxinilian <moxinilian@tutanota.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+regex = "1"
+aes-ctr = "0.3"
+base64 = "0.12"
+hex = "0.4"
+clap = "2.33"
+rand = "0.7"
