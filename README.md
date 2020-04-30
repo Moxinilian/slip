@@ -13,7 +13,7 @@
 [license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
 [license]: LICENSE
 
-An hassle-free utility to encrypt error handling strings in your public binaries to protect your business logic.
+A hassle-free utility to encrypt error handling strings in your public binaries to protect your business logic.
 
 **This crate DOES NOT provide general runtime obfuscation for strings. Please consider using something like [obfstr](https://github.com/CasualX/obfstr) for this purpose.**
 

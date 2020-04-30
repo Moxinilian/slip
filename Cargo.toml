@@ -1,7 +1,7 @@
 [package]
 name = "slip"
 license = "MIT"
-description = "An hassle-free utility to encrypt error handling strings in your public binaries to protect your business logic"
+description = "A hassle-free utility to encrypt error handling strings in your public binaries to protect your business logic"
 repository = "https://github.com/Moxinilian/slip/"
 readme = "README.md"
 version = "0.1.0"
