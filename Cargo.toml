@@ -16,7 +16,7 @@ allow-no-encryption = ["slip-imp/allow-no-encryption"]
 
 [dependencies]
 proc-macro-hack = "0.5"
-slip-imp = { path = "slip-imp" }
+slip-imp = "0.1.0"
 
 [dev-dependencies]
 anyhow = "1.0"
