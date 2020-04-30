@@ -56,7 +56,7 @@ On Windows, it can be done temporarily like so (the variable will disappear once
 $ set SLIP_KEY=<your key, without quotations>
 ```
 
-Once this is done, slip is ready to be used! See the [examples](examples) for how to use the macro, and [the examples section](#examples) section for how to use unslip.
+Once this is done, slip is ready to be used! See the [examples](examples) for how to use the macro, and [the examples section](#examples) for how to use unslip.
 
 ## Important considerations
 

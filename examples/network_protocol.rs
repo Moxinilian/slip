@@ -16,6 +16,7 @@ use anyhow::{Result, Context, anyhow};
 pub fn main() {
     // You can try passing the entire output of this panic to unslip to see how
     // it can transparently restore the original error messages.
+    // Do not forget the SLIP_KEY environment variable!
     deserialize(vec![3, 1, 2]).expect(slip!("failed to parse packet"));
 }
 
