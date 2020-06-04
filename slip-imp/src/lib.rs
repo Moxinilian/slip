@@ -56,7 +56,7 @@ pub fn slip(stream: proc_macro::TokenStream) -> proc_macro::TokenStream {
                 } else {
                     #[cfg(all(not(debug_assertions), not(feature = "allow-no-encryption")))]
                     {
-                        proc_macro_error::abort!(abs_stream, "environement variable SLIP_KEY is not set to encrypt this string")
+                        proc_macro_error::abort!(abs_stream, "environment variable SLIP_KEY is not set to encrypt this string")
                     }
 
                     #[cfg(any(debug_assertions, feature = "allow-no-encryption"))]
