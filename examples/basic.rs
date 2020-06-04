@@ -5,8 +5,8 @@ fn main() {
     // Otherwise, the slip macro will have no effect. SLIP_KEY is used as the unique key to encrypt the strings.
     // You should of course not include it in your production builds.
 
-    // Please note that the macro will only warn you about missing keys in release mode (only on nightly!),
-    // so you can debug free of hassle.
+    // Please note that the macro will only error out about missing keys in release mode or if the
+    // "allow-no-encryption" feature is enable, so you can debug free of hassle.
 
     let test_value: Option<bool> = None; // Let's pretend some error-handling logic gets triggered.
 
