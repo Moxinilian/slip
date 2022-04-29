@@ -61,7 +61,7 @@ Once this is done, slip is ready to be used! See the [examples](examples) for ho
 ## Important considerations
 
 * Changing your SLIP_KEY value **requires a complete rebuild of your dependency tree** to make sure the change is reflected everywhere. This is due to incremental compilation, as the macro is not ran again on cold code. It is therefore recommended to avoid changing the key. You can rebuild entirely by doing `cargo clean` before building again.
-* In release mode, the macro will fail building if `SLIP_KEY` is not provided. In cases where proceeding without encryption is the expected behavior for a missing key (such as in public dependencies), the `allow-no-encryption` feature should be passed to the slip dependency.
+* In release mode, the macro will fail building if `SLIP_KEY` is not provided. In cases where proceeding without encryption is the expected behavior for a missing key (such as in public dependencies), the `allow-no-encryption` feature should be passed to the slip dependency.Note that if this feature is enabled by one of your dependency, this will also **allow no encryption for your main crate**. This is not optimal, so it is recommended to instead automate the key insertion in your CD pipeline.
 * It is not recommended to rely on the encrypted form a token to identify it as its value is volatile (it can notably change between every build).
 * Of course, slip is not a miracle solution to prevent reverse engineering. Hopefully it makes it harder though.
 
